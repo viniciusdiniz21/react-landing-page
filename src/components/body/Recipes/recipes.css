@@ -20,7 +20,7 @@
 .boxItems {
     display: flex;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 1px 1px 9px -4px #979797;
     width: 500px;
 }
