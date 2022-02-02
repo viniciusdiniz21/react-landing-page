@@ -10,7 +10,7 @@ import Membership from "../body/Membership";
 function Template(){
     const templateStyle = {
         backgroundImage: `url(${Background})`,
-        height: "100vh",
+        height: "115vh",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "right center",
         paddingTop: "15px",

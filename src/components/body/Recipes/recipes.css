@@ -1,0 +1,32 @@
+.recipes {
+    text-align: center;
+    margin-top: 25%;
+    padding-top: 10vh;
+    background-color: #f1f3f4;
+    height: 120vh;
+}
+
+.box {
+    display: grid; 
+    padding-top: 5vh;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.boxItems {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 9px -4px #979797;
+    width: 500px;
+}
+
+.boxImage {
+    object-fit: cover;
+    margin-left: 0;
+    padding-left: 0;
+}

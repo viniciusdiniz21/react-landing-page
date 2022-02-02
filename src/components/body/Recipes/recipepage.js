@@ -1,9 +1,10 @@
 import Titulo from "../title";
 import Recipes from "./recipes";
+import "./recipes.css"
 
 function RecipePage () {
     return (
-        <div>
+        <div className="recipes">
             <Titulo 
                 title="Our Best Recipes" 
                 text="Far far away, behind the word mountains, far from the countries

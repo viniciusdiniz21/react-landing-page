@@ -1,0 +1,23 @@
+.blog {
+    text-align: center;
+    padding-top: 10vh;
+    background-color: #f1f3f4;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.blogPost {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 120vw;
+    padding-left: 10%;
+}
+
+.post {
+    display: block;
+    height: 65vh;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5vh;
+}

@@ -3,7 +3,7 @@ import Background from "../Membership/bloco_final_image.svg"
 function Membership(){
     const membershipStyle = {
         backgroundImage: `url(${Background})`,
-        height: "100vh",
+        height: "120vh",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "right center",
         paddingTop: "15px",
