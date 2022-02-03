@@ -6,6 +6,7 @@ import RecipePage from "../body/Recipes/recipepage";
 import Services from "../body/Services/services";
 import Blog from "../body/Blog/blog";
 import Membership from "../body/Membership";
+//import Cadastro from "../cadastro";
 
 function Template(){
     const templateStyle = {
@@ -29,3 +30,4 @@ function Template(){
 }
 
 export default Template;
+

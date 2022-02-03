@@ -1,9 +1,9 @@
-import Template from "./components/template";
+import { AppRotas } from "./Routes";
 
 function App() {
   return (
     <div className="App">
-      <Template></Template>
+      <AppRotas></AppRotas>
     </div>
   );
 }

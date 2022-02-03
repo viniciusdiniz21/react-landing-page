@@ -1,4 +1,4 @@
-import Background from "../Services/bloco_services.svg"
+import Background from "./bloco_services.svg"
 import "./services.css"
 
 function Services () {
