@@ -1,0 +1,25 @@
+.buttonSearch {
+    width: 50px;
+    height: 50px;
+    display: inline-flexbox;
+    background-color: #a7df63;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px 0px #1c1d1b;
+    color: white;
+}
+
+.inputStyle {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial;
+    color: grey;
+    height: 50px;
+    width: 10%;
+    font-size: 1.2rem;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-left: 15%;
+}

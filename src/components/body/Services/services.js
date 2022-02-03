@@ -7,7 +7,6 @@ function Services () {
         height: "112vh",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "left center",
-        paddingTop: "15px",
     }
 
     return(

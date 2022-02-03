@@ -16,7 +16,33 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+p{
+  color: grey;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media(max-width: 1100px){
+  html{
+    font-size: 50%;
+  }
+}
+
+@media(max-width: 700px){
+  html{
+    font-size: 40%;
+  }
+}
+
+@media(max-width: 400px){
+  html{
+    font-size: 35%;
+  }
 }

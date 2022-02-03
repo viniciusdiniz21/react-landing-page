@@ -23,46 +23,52 @@ function Cadastro () {
 
     return(
         <form className="form">
-            <label for="name">
+            <label>
                 Nome:
-                <input name="name" type="text" placeholder="Seu nome"></input>
+                <input type="text" placeholder="Seu nome"></input>
             </label>
-            <label for="email">
+            <label>
                 E-mail:
-                <input name="email" type="email" placeholder="seuemail@mail.com"></input>
+                <input type="email" placeholder="seuemail@mail.com"></input>
             </label>
-            <label for="password">
+            <label>
                 Senha:
-                <input name="password" type="password" placeholder="*********"></input>
+                <input type="password" placeholder="*********"></input>
             </label>
-            <label for="data">
+            <label>
                 Data de Nascimento:
-                <input type="date" name="data"></input>
+                <input type="date"></input>
             </label>
-            <label for="cpf">
+            <label>
                 CPF:
-                <input name="cpf" type="text" placeholder="XXX.XXX.XXX-XX"></input>
+                <input type="text" placeholder="XXX.XXX.XXX-XX"></input>
             </label>
-            <label for="cpf">
+            <label>
                 CEP:
-                <input name="cpf" type="text" placeholder="XX.XXX-XXX"
+                <input type="text" placeholder="XX.XXX-XXX"
                     value={input}
                     onChange={(e)=>{setInput(e.target.value)}}
                 />
             </label>
-            <label for="rua">
+            <label>
                 Rua:
-                <input type="text" name="rua"
+                <input type="text"
                     value={cep.logradouro}
                 ></input>
             </label>
-            <label for="bairro">
+            <label>
                 Bairro:
-                <input type="text" name="bairro"
+                <input type="text"
                     value={cep.bairro}
                 ></input>
             </label>
-            <button onClick={HandleSearch()}>Button</button>
+            <label>
+                Número:
+                <input type="text" name="numero"
+                    
+                ></input>
+            </label>
+            <button className="buttonStyle" onClick={HandleSearch()}>Register</button>
         </form>
     )
 }

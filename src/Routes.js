@@ -11,7 +11,7 @@ export function AppRotas(){
     return(
         <Router>
             <Routes>
-                <Route path="/main" element={<Page/>}/>
+                <Route path="/" element={<Page/>}/>
                  
                 <Route path="/register" element={<Register/>}/>
 

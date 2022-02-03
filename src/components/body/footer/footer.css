@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+.cop{
+    color: #013064;
+    font-size: 1.6rem;
+}
+
+.terms{
+    color: grey;
+    font-size: 1.6rem;
+}
+
+@media(max-width: 600px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

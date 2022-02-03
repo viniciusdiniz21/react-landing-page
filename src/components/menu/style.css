@@ -1,0 +1,30 @@
+.buttonStyleMenu {
+    border-radius: 5px;
+    font-family: Arial;
+    color: #a7df63;
+    font-size: 16px;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonStyleMenu:hover{
+    color: white;
+    background-color: #a7df63;
+}
+
+a > button {
+    color: #a7df63;
+}
+
+
+a > button:hover {
+    color: white;
+}
+
+@media(max-width: 600px){
+    .hidden{   
+        display: none !important;
+    }
+}

@@ -1,20 +1,39 @@
 .recipes {
-    text-align: center;
     margin-top: 25%;
+    text-align: center;
     padding-top: 10vh;
     background-color: #f1f3f4;
     height: 120vh;
 }
 
+.recipeTitle{
+    font-size: 2.4rem;
+    color: #013064;
+    padding-left: 15px;
+    max-width: 80%;
+    text-align: left; 
+}
+
 .box {
     display: grid; 
     padding-top: 5vh;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: repeat(2, minmax(300px, 1fr));  
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    padding-right: 10%;
-    padding-left: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.buttonRecipe {
+    width: 170px;
+    height: 50px;
+    display: inline-flexbox;
+    background-color: #a7df63;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px 0px #a7df63;
+    color: white;
 }
 
 .boxItems {
@@ -22,11 +41,44 @@
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 9px -4px #979797;
-    width: 500px;
+    width: 40vw;
 }
 
 .boxImage {
     object-fit: cover;
     margin-left: 0;
     padding-left: 0;
+}
+
+@media(max-width: 1200px){
+    .recipes{
+        height: 220vh;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipeTitle{
+        text-align: center;
+    }
+
+    .boxItems{
+        width: 50vw;
+    }
+}
+
+@media(max-width: 940px){
+
+    .boxItems{
+        display: block;
+        height: 40vh;
+        width: 60vw;
+    }
+    .boxImage{
+        object-fit: cover;
+        width: 60vw;
+        height: 25vh;
+    }
 }

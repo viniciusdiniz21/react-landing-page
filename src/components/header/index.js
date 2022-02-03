@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "../menu";
+import "./style.css"
 
 function Header(){
     const headerStyle = {
@@ -10,19 +11,19 @@ function Header(){
         flexDirection: "row",
         justifyContent: "spaceBetween",
         alingItems: "center",
-        fontWeight: "400"
+        fontWeight: "500"
     };
 
     const logoStyle = {
         //cor verde claro
         color: "#a7df63",
         fontWeight: "700",
-        fontSize: "26px"
+        fontSize: "3.2rem"
     }
 
     return(
         <header style={headerStyle}>
-            <div style={logoStyle}>Healthy Food</div>
+            <div style={logoStyle} className="title">Healthy Food</div>
             <Menu></Menu>
         </header>
     )

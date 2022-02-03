@@ -2,3 +2,41 @@
     display: flex;
     flex-direction: column;
 }
+
+form > label > input {
+    border: 1px solid black;
+    display: block;
+    border-radius: 5px;
+    font-family: Arial;
+    color: grey;
+    height: 50px;
+    width: 30vw;
+    font-size: 1.6rem;
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.buttonStyle {
+    border-radius: 5px;
+    font-family: Arial;
+    color: white;
+    font-size: 16px;
+    background: #a7df63;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 200px;
+}
+
+.buttonStyle:hover{
+    color: #a7df63;
+    background-color: #ffffff;
+}
+
+label{
+    text-align: center;
+    font-size: 2rem;
+}

@@ -21,3 +21,28 @@
     border-radius: 10px;
     margin-top: 5vh;
 }
+@media(max-width: 980px){
+    .post{
+        height: 70vh;
+    }
+}
+
+@media(max-width: 700px) {
+    .blogPost{
+        display: block;
+        width: 80%;
+        padding-left: 0%;
+    }
+
+    .post{
+        height: 50vh;
+    }
+    .blog{
+        height: 240vh;
+    }
+    .image {
+        width: 100%;
+        object-fit: cover;
+        height: 25vh;
+    }
+}

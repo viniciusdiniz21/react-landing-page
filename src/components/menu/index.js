@@ -1,3 +1,5 @@
+import "./style.css"
+
 function Menu(){
     const menuStyle = {
         display: "flex",
@@ -10,24 +12,22 @@ function Menu(){
         marginRight: "24px"
     }
 
-    const buttonStyle = {
-        borderRadius: "5px",
-        fontFamily: "Arial",
-        color: "#a7df63",
-        fontSize: "16px",
-        background: "#ffffff",
-        padding: "10px 20px 10px 20px",
-        textDecoration: "none",
-        cursor: "pointer"
-    }
-
     return (
-        <nav style={menuStyle}>
-            <a style={aStyle} href="#">HEALTHY RECIPES</a>
-            <a style={aStyle} href="#">BLOG</a>
-            <a style={aStyle} href="#">JOIN</a>
-            <button style={buttonStyle}>Register</button>
-        </nav>
+        <div>
+            <div className="menu-toggle">
+                    <div className="one"></div>
+                    <div className="two"></div>
+                    <div className="three"></div>
+                    <div className="four"></div>
+            </div>
+            <nav style={menuStyle} className="hidden">
+                <a style={aStyle} href="#">HEALTHY RECIPES</a>
+                <a style={aStyle} href="#">BLOG</a>
+                <a style={aStyle} href="#">JOIN</a>
+                <a href="http://localhost:3000/register"><button className="buttonStyleMenu">Register</button></a>
+            </nav>
+        </div>
+
     )
 }
 
