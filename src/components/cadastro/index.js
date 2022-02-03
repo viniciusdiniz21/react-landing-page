@@ -8,7 +8,7 @@ function Cadastro () {
   
   
     async function HandleSearch() {
-      if(input === ''){
+      if(input.length !== 8){
         return
       }
       try {
@@ -48,6 +48,7 @@ function Cadastro () {
                 <input type="text" placeholder="XX.XXX-XXX"
                     value={input}
                     onChange={(e)=>{setInput(e.target.value)}}
+                    onBlur={HandleSearch()}
                 />
             </label>
             <label>
@@ -68,7 +69,10 @@ function Cadastro () {
                     
                 ></input>
             </label>
-            <button className="buttonStyle" onClick={HandleSearch()}>Register</button>
+            <button className="buttonStyle" onClick={(event)=>{
+                event.preventDefault()
+                HandleSearch()
+            }}>Register</button>
         </form>
     )
 }
