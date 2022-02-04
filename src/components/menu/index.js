@@ -3,7 +3,7 @@ import "./style.css"
 function Menu(){
     const menuStyle = {
         display: "flex",
-        flexWrap: "wrap"
+        flexWrap: "wrap",
     }
 
     const aStyle = {
@@ -18,7 +18,6 @@ function Menu(){
                     <div className="one"></div>
                     <div className="two"></div>
                     <div className="three"></div>
-                    <div className="four"></div>
             </div>
             <nav style={menuStyle} className="hidden">
                 <a style={aStyle} href="#">HEALTHY RECIPES</a>

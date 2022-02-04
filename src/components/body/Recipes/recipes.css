@@ -82,3 +82,9 @@
         height: 25vh;
     }
 }
+
+@media(max-width: 500px){
+    .buttonRecipe{
+        width: 60%;
+    }
+}
