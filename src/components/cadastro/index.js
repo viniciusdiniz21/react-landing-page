@@ -1,11 +1,18 @@
 import "./cadastro.css"
-import {useState} from 'react'
+import { useState } from 'react'
 import api from "../../services/api"
 
 function Cadastro () {
     const [input, setInput] = useState('')
     const [cep, setCep] = useState({})
-  
+    const [nome, setNome] = useState('')
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+    const [dataNasc, setDataNasc] = useState('')
+    const [cpf, setCpf] = useState('')
+    const [rua, setRua] = useState('')
+    const [bairro, setBairro] = useState('')
+    const [numero, setNumero] = useState('')
   
     async function HandleSearch() {
       if(input.length !== 8){
@@ -21,30 +28,63 @@ function Cadastro () {
       }
     }
 
+    function HandleSubmit(){
+        const dados = JSON.parse(localStorage.getItem("dadosUsuarios"))
+        if(dados == null){
+            localStorage.setItem("dadosUsuarios", "[]");
+            dados = []
+        }
+
+        const register = {
+            nome: nome,
+            email: email,
+            senha: senha,
+            cep: input,
+            cpf: cpf,
+            rua: rua,
+            bairro: bairro,
+            dataNasc: dataNasc,
+            numero: numero
+        }
+
+        dados.push(register)
+
+        localStorage.setItem("dadosUsuarios", JSON.stringify(dados))
+    }
+
     return(
         <form className="form">
             <label>
                 Nome:
-                <input type="text" placeholder="Seu nome"></input>
+                <input type="text" placeholder="Seu nome" value={nome} 
+                onChange={(e)=>{setNome(e.target.value)}}
+                ></input>
             </label>
             <label>
                 E-mail:
-                <input type="email" placeholder="seuemail@mail.com"></input>
+                <input type="email" placeholder="seuemail@mail.com" value={email}
+                onChange={(e)=>{setEmail(e.target.value)}}
+                ></input>
             </label>
             <label>
                 Senha:
-                <input type="password" placeholder="*********"></input>
+                <input type="password" placeholder="*********" value={senha}
+                onChange={(e)=>{setSenha(e.target.value)}}
+                ></input>
             </label>
             <label>
                 Data de Nascimento:
-                <input type="date"></input>
+                <input type="date" value={dataNasc}
+                onChange={(e)=>{setDataNasc(e.target.value)}}
+                ></input>
             </label>
             <label>
-                CPF:
-                <input type="text" placeholder="XXX.XXX.XXX-XX"></input>
+                CPF (apenas numeros):
+                <input type="text" placeholder="XXX.XXX.XXX-XX" value={cpf}
+                onChange={(e)=>{setCpf(e.target.value)}}></input>
             </label>
             <label>
-                CEP:
+                CEP (apenas numeros):
                 <input type="text" placeholder="XX.XXX-XXX"
                     value={input}
                     onChange={(e)=>{setInput(e.target.value)}}
@@ -55,23 +95,35 @@ function Cadastro () {
                 Rua:
                 <input type="text"
                     value={cep.logradouro}
+                    onChange={(e)=>{setRua(e.target.value)}}
                 ></input>
             </label>
             <label>
                 Bairro:
                 <input type="text"
                     value={cep.bairro}
+                    onChange={(e)=>{setBairro(e.target.value)}}
                 ></input>
             </label>
             <label>
                 Número:
                 <input type="text" name="numero"
-                    
+                    value={numero}
+                    onChange={(e)=>{setNumero(e.target.value)}}
                 ></input>
             </label>
-            <button className="buttonStyle" onClick={(event)=>{
+            <button className="buttonStyle" type="button" onClick={(event)=>{
                 event.preventDefault()
-                HandleSearch()
+                HandleSubmit()
+                setNome('')
+                setEmail('')
+                setSenha('')
+                setCpf('')
+                setInput('')
+                setRua('')
+                setBairro('')
+                setNumero('')
+                setDataNasc('')
             }}>Register</button>
         </form>
     )
