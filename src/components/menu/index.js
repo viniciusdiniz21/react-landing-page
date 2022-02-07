@@ -23,7 +23,7 @@ function Menu(){
                 <a style={aStyle} href="http://localhost:3000">HEALTHY RECIPES</a>
                 <a style={aStyle} href="http://localhost:3000">BLOG</a>
                 <a style={aStyle} href="http://localhost:3000">JOIN</a>
-                <a href="http://localhost:3000/register"><button className="buttonStyleMenu">Register</button></a>
+                <a href="https://react-page-abd1osbve-viniciusdiniz21.vercel.app/register"><button className="buttonStyleMenu">Register</button></a>
             </nav>
         </div>
 
