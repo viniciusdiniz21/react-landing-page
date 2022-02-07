@@ -20,9 +20,9 @@ function Menu(){
                     <div className="three"></div>
             </div>
             <nav style={menuStyle} className="hidden">
-                <a style={aStyle} href="#">HEALTHY RECIPES</a>
-                <a style={aStyle} href="#">BLOG</a>
-                <a style={aStyle} href="#">JOIN</a>
+                <a style={aStyle} href="http://localhost:3000">HEALTHY RECIPES</a>
+                <a style={aStyle} href="http://localhost:3000">BLOG</a>
+                <a style={aStyle} href="http://localhost:3000">JOIN</a>
                 <a href="http://localhost:3000/register"><button className="buttonStyleMenu">Register</button></a>
             </nav>
         </div>
