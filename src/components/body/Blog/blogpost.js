@@ -28,7 +28,7 @@ function BlogPosts (){
     return (
         <div className="blogPost">
             <div className="post">
-                <img src={Imagem1} className="image"></img>
+                <img src={Imagem1} className="image" alt="#"></img>
                 <TextPost
                     title="Quick-start guide to nuts and seeds"
                     name="Kevin Ibrahim"
@@ -36,21 +36,21 @@ function BlogPosts (){
 
             </div>
             <div className="post">
-                <img src={Imagem2} className="image"></img>
+                <img src={Imagem2} className="image" alt="#"></img>
                 <TextPost
                     title="Nutrition: Tips for Improving Your Health"
                     name="Mike Jackson"
                 />
             </div>
             <div className="post">
-                <img src={Imagem3} className="image"></img>
+                <img src={Imagem3} className="image" alt="#"></img>
                 <TextPost
                     title="The top 10 benefits of eating healthy"
                     name="Bryan McGregor"
                 />
             </div>
             <div className="post">
-                <img src={Imagem4} className="image"></img>
+                <img src={Imagem4} className="image" alt="#"></img>
                 <TextPost
                     title="Quick-start guide to nuts and seeds"
                     name="Jason Ibrahim"

@@ -9,25 +9,25 @@ const Recipes = () => {
     return(
         <div className="box">
             <div className="boxItems">
-                <img className="boxImage" src={Comida1}/>
+                <img className="boxImage" src={Comida1} alt="#"/>
                 <RecipeBox
                 title="Broccoli Salad with Bacon"
                 />
             </div>
             <div className="boxItems">
-                <img className="boxImage" src={Comida2}/>
+                <img className="boxImage" src={Comida2} alt="#"/>
                 <RecipeBox
                 title="Classic Beef Burguers"
                 />
             </div>
             <div className="boxItems">
-                <img className="boxImage" src={Comida3}/>
+                <img className="boxImage" src={Comida3} alt="#"/>
                 <RecipeBox
                 title="Classic Potato Salad"
                 />
             </div>
             <div className="boxItems">
-                <img className="boxImage" src={Comida4}/>
+                <img className="boxImage" src={Comida4} alt="#"/>
                 <RecipeBox
                 title="Cherry Cobbler on the Grill"
                 />
